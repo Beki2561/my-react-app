@@ -1,13 +1,15 @@
 import React from 'react';
-import CardComponents from './components/card-components/App';
+import UserGreeting from './components/userGreeting/App';
 
-function CardApp() {
+function App() {
   return (
-    <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Card Components</h1>
-      <CardComponents />
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="p-6 bg-white shadow-md rounded-lg">
+        <UserGreeting isLoggedIn={true} username="Bereket" />
+        {/* Change isLoggedIn to false to test login message */}
+      </div>
     </div>
   );
 }
 
-export default CardApp;
+export default App;
