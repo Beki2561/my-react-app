@@ -1,13 +1,11 @@
 import React from 'react';
-import UserGreeting from './components/userGreeting/App';
+import Updatelist from './components/Updatelist/App';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="p-6 bg-white shadow-md rounded-lg">
-        <UserGreeting isLoggedIn={true} username="Bereket" />
-        {/* Change isLoggedIn to false to test login message */}
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 flex flex-col items-center justify-center p-6">
+      <h1 className="text-3xl font-bold text-blue-600 mb-6">🍽️ My Food Manager</h1>
+      <Updatelist />
     </div>
   );
 }
